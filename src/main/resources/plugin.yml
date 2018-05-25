@@ -1,0 +1,21 @@
+name: RedTrichterFiller
+version: '${minecraft.plugin.version}'
+main: de.redstoneworld.redtrichterfiller.RedTrichterFiller
+authors: [Phoenix616]
+commands:
+   redtrichterfiller:
+      aliases: [trichterfiller,tf]
+      description: Command description.
+      usage: /<command> [<strength>|reload]
+      permission: rwm.trichterfiller.use
+      permission-message: You don't have the permission <permission>
+permissions:
+   rwm.trichterfiller.use:
+      description: Gives permission to the plugin command
+      default: op
+   rwm.trichterfiller.reload:
+      description: Gives permission to the plugin command
+      default: op
+   rwm.trichterfiller.setstrength:
+      description: Gives permission to set the strength in the command
+      default: op

@@ -1,0 +1,18 @@
+# Which type of click fills the inventory
+click-type: middle
+# Should items that are already in the inventory be returned to the player?
+# Set to true on a survival server.
+return-items: false
+# Which strength should the comparator output when one additional item is added to the hopper
+# when it is used via the interface/not specified
+default-target-strength: 2
+
+lang:
+  no-permission: "&8[&2Trichter&fFiller&8]&f: &cDir fehlt die Permission <permission>"
+  wrong-syntax: "&8[&2Trichter&fFiller&8]&f: Schreibe: &7/trichterfiller &8[<stärke>]"
+  item-not-stackable: "&8[&2Trichter&fFiller&8]&f: &cItems vom Typ <type> können nicht gestackt werden!"
+  no-item: "&8[&2Trichter&fFiller&8]&f: &cNehme ein (stackbares) Item in die Hand!"
+  not-a-hopper: "&8[&2Trichter&fFiller&8]&f: &cBitte schaue auf einen Trichter!"
+  strength-too-low: "&8[&2Trichter&fFiller&8]&f: &cBitte gebe eine höhere Signalstärke ein!"
+  inventory-too-big: "&8[&2Trichter&fFiller&8]&f: &cDas Inventar ist <size> groß aber braucht nur <required> Items für <strength> Signalstärke! Gebe eine höhere Stärke ein!"
+  filled:  "&8[&2Trichter&fFiller&8]&f: Gefüllt!"
