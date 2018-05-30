@@ -76,6 +76,11 @@ public class RedTrichterFiller extends JavaPlugin {
             sendMessage(filler, "strength-too-low", "strength", String.valueOf(targetStrength));
             return false;
         }
+    
+        if (targetStrength > 15) {
+            sendMessage(filler, "strength-too-high", "strength", String.valueOf(targetStrength));
+            return false;
+        }
         
         int requiredItems = Math.max(targetStrength, (int) Math.ceil((inventory.getSize() * item.getMaxStackSize() / 14.0) * (targetStrength - 1)));
         if (requiredItems < inventory.getSize()) {

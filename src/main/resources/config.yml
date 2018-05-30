@@ -14,5 +14,6 @@ lang:
   no-item: "&8[&2Trichter&fFiller&8]&f: &cNehme ein (stackbares) Item in die Hand!"
   not-a-hopper: "&8[&2Trichter&fFiller&8]&f: &cBitte schaue auf einen Trichter!"
   strength-too-low: "&8[&2Trichter&fFiller&8]&f: &cBitte gebe eine höhere Signalstärke ein!"
+  strength-too-high: "&8[&2Trichter&fFiller&8]&f: &cBitte gebe eine niedrigere Signalstärke ein!"
   inventory-too-big: "&8[&2Trichter&fFiller&8]&f: &cDas Inventar ist <size> groß aber braucht nur <required> Items für <strength> Signalstärke! Gebe eine höhere Stärke ein!"
   filled:  "&8[&2Trichter&fFiller&8]&f: Gefüllt!"
