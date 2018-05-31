@@ -9,6 +9,7 @@ default-target-strength: 2
 
 lang:
   no-permission: "&8[&2Trichter&fFiller&8]&f: &cDir fehlt die Permission <permission>"
+  cant-set-strength: "&8[&2Trichter&fFiller&8]&f: &cDu darfst die Stärke nicht setzen!"
   wrong-syntax: "&8[&2Trichter&fFiller&8]&f: Schreibe: &7/trichterfiller &8[<stärke>]"
   item-not-stackable: "&8[&2Trichter&fFiller&8]&f: &cItems vom Typ <type> können nicht gestackt werden!"
   no-item: "&8[&2Trichter&fFiller&8]&f: &cNehme ein (stackbares) Item in die Hand!"

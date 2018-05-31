@@ -47,7 +47,11 @@ public class RedHopperFillerCommand implements CommandExecutor {
         }
         
         int targetStrength = plugin.getDefaultTargetStrength();
-        if (args.length > 0 && sender.hasPermission("rwm.trichterfiller.setstrength")) {
+        if (args.length > 0) {
+            if (!sender.hasPermission("rwm.trichterfiller.setstrength")) {
+                plugin.sendMessage(sender, "cant-set-strength");
+                return true;
+            }
             try {
                 targetStrength = Integer.parseInt(args[0]);
             } catch (IllegalArgumentException e) {
