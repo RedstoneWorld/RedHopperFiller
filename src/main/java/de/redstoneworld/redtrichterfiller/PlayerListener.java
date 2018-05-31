@@ -1,5 +1,6 @@
 package de.redstoneworld.redtrichterfiller;
 
+import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -15,7 +16,7 @@ public class PlayerListener implements Listener {
     @EventHandler(ignoreCancelled = true)
     public void onClick(InventoryClickEvent event) {
         if (event.getClick() != plugin.getClickType()
-                || event.getCursor() == null
+                || event.getCursor() == null || event.getCursor().getType() == Material.AIR
                 || event.getClickedInventory().getType() != InventoryType.HOPPER) {
             return;
         }
