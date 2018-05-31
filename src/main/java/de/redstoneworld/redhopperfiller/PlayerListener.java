@@ -1,4 +1,4 @@
-package de.redstoneworld.redtrichterfiller;
+package de.redstoneworld.redhopperfiller;
 
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
@@ -7,9 +7,9 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType;
 
 public class PlayerListener implements Listener {
-    private final RedTrichterFiller plugin;
+    private final RedHopperFiller plugin;
     
-    public PlayerListener(RedTrichterFiller plugin) {
+    public PlayerListener(RedHopperFiller plugin) {
         this.plugin = plugin;
     }
     

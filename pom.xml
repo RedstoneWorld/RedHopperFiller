@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.redstoneworld</groupId>
-    <artifactId>redtrichterfiller</artifactId>
+    <artifactId>redhopperfiller</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>RedTrichterFiller</name>
+    <name>RedHopperFiller</name>
 
 
     <properties>

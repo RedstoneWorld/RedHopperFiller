@@ -1,4 +1,4 @@
-package de.redstoneworld.redtrichterfiller;
+package de.redstoneworld.redhopperfiller;
 
 import org.bukkit.ChatColor;
 import org.bukkit.block.BlockState;
@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Level;
 
-public class RedTrichterFiller extends JavaPlugin {
+public class RedHopperFiller extends JavaPlugin {
     
     private ClickType clickType;
     private boolean returnItems;
@@ -21,7 +21,7 @@ public class RedTrichterFiller extends JavaPlugin {
     @Override
     public void onEnable() {
         loadConfig();
-        getCommand(getName().toLowerCase()).setExecutor(new RedTrichterFillerCommand(this));
+        getCommand(getName().toLowerCase()).setExecutor(new RedHopperFillerCommand(this));
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
     }
     

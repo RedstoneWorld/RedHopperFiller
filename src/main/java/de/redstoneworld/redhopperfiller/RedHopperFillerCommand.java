@@ -1,10 +1,8 @@
-package de.redstoneworld.redtrichterfiller;
+package de.redstoneworld.redhopperfiller;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockFace;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,8 +17,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class RedTrichterFillerCommand implements CommandExecutor {
-    private final RedTrichterFiller plugin;
+public class RedHopperFillerCommand implements CommandExecutor {
+    private final RedHopperFiller plugin;
     private static final Set<Material> TRANSPARENT = new HashSet<>();
     
     static {
@@ -31,7 +29,7 @@ public class RedTrichterFillerCommand implements CommandExecutor {
         }
     }
     
-    public RedTrichterFillerCommand(RedTrichterFiller plugin) {
+    public RedHopperFillerCommand(RedHopperFiller plugin) {
         this.plugin = plugin;
     }
     

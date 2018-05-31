@@ -1,21 +1,21 @@
-name: RedTrichterFiller
+name: RedHopperFiller
 version: '${minecraft.plugin.version}'
-main: de.redstoneworld.redtrichterfiller.RedTrichterFiller
+main: de.redstoneworld.redhopperfiller.RedHopperFiller
 authors: [Phoenix616]
 commands:
-   redtrichterfiller:
-      aliases: [trichterfiller,tf]
+   redhopperfiller:
+      aliases: [hopperfiller,hf]
       description: Command description.
       usage: /<command> [<strength>|reload]
-      permission: rwm.trichterfiller.use
+      permission: rwm.hopperfiller.use
       permission-message: You don't have the permission <permission>
 permissions:
-   rwm.trichterfiller.use:
+   rwm.hopperfiller.use:
       description: Gives permission to the plugin command
       default: op
-   rwm.trichterfiller.reload:
+   rwm.hopperfiller.reload:
       description: Gives permission to the plugin command
       default: op
-   rwm.trichterfiller.setstrength:
+   rwm.hopperfiller.setstrength:
       description: Gives permission to set the strength in the command
       default: op
