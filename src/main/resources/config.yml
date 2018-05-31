@@ -6,6 +6,8 @@ return-items: false
 # Which strength should the comparator output when one additional item is added to the hopper
 # when it is used via the interface/not specified
 default-target-strength: 2
+# How many items have to be added in order to reach the strength
+items-required-for-strength: 1
 
 lang:
   no-permission: "&8[&2Trichter&fFiller&8]&f: &cDir fehlt die Permission <permission>"

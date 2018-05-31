@@ -17,6 +17,7 @@ public class RedHopperFiller extends JavaPlugin {
     private ClickType clickType;
     private boolean returnItems;
     private int defaultTargetStrength;
+    private int itemsRequiredForStrength;
     
     @Override
     public void onEnable() {
@@ -31,6 +32,7 @@ public class RedHopperFiller extends JavaPlugin {
         getCommand(getName().toLowerCase()).setPermissionMessage(getLang("lang.no-permission"));
         returnItems = getConfig().getBoolean("return-items");
         defaultTargetStrength = getConfig().getInt("default-target-strength");
+        itemsRequiredForStrength = getConfig().getInt("items-required-for-strength");
         try {
             clickType = ClickType.valueOf(getConfig().getString("click-type").toUpperCase());
         } catch (IllegalArgumentException e) {
@@ -83,6 +85,7 @@ public class RedHopperFiller extends JavaPlugin {
         }
         
         int requiredItems = Math.max(targetStrength, (int) Math.ceil((inventory.getSize() * item.getMaxStackSize() / 14.0) * (targetStrength - 1)));
+        requiredItems = requiredItems - itemsRequiredForStrength;
         if (requiredItems < inventory.getSize()) {
             sendMessage(filler, "inventory-too-big",
                     "size", String.valueOf(inventory.getSize()),
@@ -97,7 +100,7 @@ public class RedHopperFiller extends JavaPlugin {
             if (returnItems && inventory.getItem(i) != null) {
                 filler.getInventory().addItem(inventory.getItem(i));
             }
-            int amount = requiredItems - (inventory.getSize() - i);
+            int amount = requiredItems - inventory.getSize() + i + 1;
             int minAmount = Math.min(amount, clone.getMaxStackSize());
             clone.setAmount(minAmount);
             requiredItems = requiredItems - clone.getAmount();
