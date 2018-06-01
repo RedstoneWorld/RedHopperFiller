@@ -29,7 +29,7 @@ public class RedHopperFiller extends JavaPlugin {
     public void loadConfig() {
         saveDefaultConfig();
         reloadConfig();
-        getCommand(getName().toLowerCase()).setPermissionMessage(getLang("lang.no-permission"));
+        getCommand(getName().toLowerCase()).setPermissionMessage(getLang("no-permission"));
         returnItems = getConfig().getBoolean("return-items");
         defaultTargetStrength = getConfig().getInt("default-target-strength");
         itemsRequiredForStrength = getConfig().getInt("items-required-for-strength");
