@@ -17,7 +17,8 @@ public class PlayerListener implements Listener {
     public void onClick(InventoryClickEvent event) {
         if (event.getClick() != plugin.getClickType()
                 || event.getCursor() == null || event.getCursor().getType() == Material.AIR
-                || event.getClickedInventory().getType() != InventoryType.HOPPER) {
+                || event.getClickedInventory() == null || event.getClickedInventory().getType() != InventoryType.HOPPER
+                || !event.getWhoClicked().hasPermission("rwm.hopperfiller.use")) {
             return;
         }
         
