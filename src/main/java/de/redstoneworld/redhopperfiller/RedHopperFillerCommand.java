@@ -35,7 +35,7 @@ public class RedHopperFillerCommand implements CommandExecutor {
     
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (args.length > 0) {
-            if ("reload".equalsIgnoreCase(args[0]) && sender.hasPermission("rwm.trichterfiller.reload")) {
+            if ("reload".equalsIgnoreCase(args[0]) && sender.hasPermission("rwm.redhopperfiller.reload")) {
                 plugin.loadConfig();
                 sender.sendMessage(ChatColor.YELLOW + "Config reloaded!");
                 return true;
@@ -48,7 +48,7 @@ public class RedHopperFillerCommand implements CommandExecutor {
         
         int targetStrength = plugin.getDefaultTargetStrength();
         if (args.length > 0) {
-            if (!sender.hasPermission("rwm.trichterfiller.setstrength")) {
+            if (!sender.hasPermission("rwm.redhopperfiller.setstrength")) {
                 plugin.sendMessage(sender, "cant-set-strength");
                 return true;
             }

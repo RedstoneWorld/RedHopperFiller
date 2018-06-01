@@ -7,15 +7,15 @@ commands:
       aliases: [hopperfiller,hf]
       description: Command description.
       usage: /<command> [<strength>|reload]
-      permission: rwm.hopperfiller.use
+      permission: rwm.redhopperfiller.use
       permission-message: You don't have the permission <permission>
 permissions:
-   rwm.hopperfiller.use:
+   rwm.redhopperfiller.use:
       description: Gives permission to the plugin command
       default: op
-   rwm.hopperfiller.reload:
+   rwm.redhopperfiller.reload:
       description: Gives permission to the plugin command
       default: op
-   rwm.hopperfiller.setstrength:
+   rwm.redhopperfiller.setstrength:
       description: Gives permission to set the strength in the command
       default: op
