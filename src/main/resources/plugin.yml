@@ -1,5 +1,6 @@
 name: RedHopperFiller
 version: '${minecraft.plugin.version}'
+api-version: '1.13'
 main: de.redstoneworld.redhopperfiller.RedHopperFiller
 authors: [Phoenix616]
 commands:
